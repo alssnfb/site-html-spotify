@@ -1,108 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>inMusic</title>
-</head>
-<body>
-    <navbar id ="navbar">
-        <div class = "navbar-container">
-            <img src="./img/Design_sem_nome__1_-removebg.png" alt="" class="logo" />
-            <ul class="navbar-items">
-                <li class="navbar-item">Premium</li>
-                <li class="navbar-item">Ajuda</li>
-                <li class="navbar-item">Inscrever-se</li>
-                <li class="navbar-item"><a href="login.html">Entrar</a></li>
-            </ul>
-        </div>
+  </head>
+  <body>
+    <navbar id="navbar">
+      <div class="navbar-container">
+        <img src="./img/Design_sem_nome__1_-removebg.png" alt="" class="logo" />
+        <ul class="navbar-items">
+          <li class="navbar-item">Premium</li>
+          <li class="navbar-item">Ajuda</li>
+          <li
+            class="navbar-item item-login"
+            onclick="window.location.href='cadastro.html'"
+          >
+            Entrar
+          </li>
+          <li
+            class="navbar-item item-sair"
+            style="display: none"
+            onclick="sair()"
+          >
+            Sair
+          </li>
+          <p class="usuario"></p>
+        </ul>
+      </div>
     </navbar>
 
-    <div id ="showcase">
-        <div class="showcase-container">
-            <h2>Música para todos.</h2>
-            <p> 
-                Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.
-            </p>
-            <button class="btn-primary">Obtenha o inMusic Free</button>
-        </div>
+    <div id="showcase">
+      <div class="showcase-container">
+        <h2>Música para todos.</h2>
+        <p>
+          Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.
+        </p>
+        <button class="btn-primary">Obtenha o inMusic Free</button>
+      </div>
     </div>
 
-    <footer id ="footer">
-        <div class = "footer-content">
-            <img src="img/Design_sem_nome__1_-removebg.png" alt="" class="logo">
-            <ul class="footer-menu">
-                <p>Empresa</p>
-                <li class="footer-menu-item">
-                    Sobre
-                </li>
-                <li class="footer-menu-item">
-                    Empregos
-                </li>
-                <li class="footer-menu-item">
-                    For the record
-                </li>
-            </ul>
+    <footer id="footer">
+      <div class="footer-content">
+        <img src="img/Design_sem_nome__1_-removebg.png" alt="" class="logo" />
+        <ul class="footer-menu">
+          <p>Empresa</p>
+          <li class="footer-menu-item">Sobre</li>
+          <li class="footer-menu-item">Empregos</li>
+          <li class="footer-menu-item">For the record</li>
+        </ul>
 
-            <ul class="footer-menu">
-                <p>Comunidades</p>
-                <li class="footer-menu-item">
-                    Para Artistas
-                </li>
-                <li class="footer-menu-item">
-                    Desenvolvedores 
-                </li>
-                <li class="footer-menu-item">
-                    Marcas
-                </li>
-                <li class="footer-menu-item">
-                    Investidores
-                </li>
-                <li class="footer-menu-item">
-                    Fornecedores
-                </li>
-            </ul>
+        <ul class="footer-menu">
+          <p>Comunidades</p>
+          <li class="footer-menu-item">Para Artistas</li>
+          <li class="footer-menu-item">Desenvolvedores</li>
+          <li class="footer-menu-item">Marcas</li>
+          <li class="footer-menu-item">Investidores</li>
+          <li class="footer-menu-item">Fornecedores</li>
+        </ul>
 
-            <ul class="footer-menu">
-                <p>Links úteis</p>
-                <li class="footer-menu-item">
-                    Ajuda
-                </li>
-                <li class="footer-menu-item">
-                    Player da Web 
-                </li>
-                <li class="footer-menu-item">
-                    Aplicativo movel grátis
-                </li>
-            </ul>
+        <ul class="footer-menu">
+          <p>Links úteis</p>
+          <li class="footer-menu-item">Ajuda</li>
+          <li class="footer-menu-item">Player da Web</li>
+          <li class="footer-menu-item">Aplicativo movel grátis</li>
+        </ul>
 
-            <div class = "socials">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
-            </div>
+        <div class="socials">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
         </div>
-        <div class="footer-info">
-            <ul class="footer-info-items">
-                <li class="footer-info-item">Legal</li>
-                <li class="footer-info-item">Centro de Privacidade</li>
-                <li class="footer-info-item">Política de Privacidade</li>
-                <li class="footer-info-item">Cookies</li>
-                <li class="footer-info-item">Sobre Anúncios</li>
-            </ul>
+      </div>
+      <div class="footer-info">
+        <ul class="footer-info-items">
+          <li class="footer-info-item">Legal</li>
+          <li class="footer-info-item">Centro de Privacidade</li>
+          <li class="footer-info-item">Política de Privacidade</li>
+          <li class="footer-info-item">Cookies</li>
+          <li class="footer-info-item">Sobre Anúncios</li>
+        </ul>
 
-            <div class="rights">
-                <div class="country">
-                    <p>Brasil</p>
-                    <img src="img/brazil.png" alt="" class="brazil-flag">
-                </div>
-                <p>&copy; 2024 inMusic AB</p>
-            </div>
+        <div class="rights">
+          <div class="country">
+            <p>Brasil</p>
+            <img src="img/brazil.png" alt="" class="brazil-flag" />
+          </div>
+          <p>&copy; 2024 inMusic AB</p>
         </div>
+      </div>
     </footer>
-    
-    <script src="https://kit.fontawesome.com/cb97ea116a.js" crossorigin="anonymous"></script>
-</body>
+
+    <script
+      src="https://kit.fontawesome.com/cb97ea116a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function checarBanco() {
+        if (!localStorage.getItem("estaLogado")) {
+          localStorage.setItem("estaLogado", false);
+        }
+
+        if (!localStorage.getItem("usernameLogado")) {
+          localStorage.setItem("usernameLogado", "");
+        }
+
+        if (localStorage.getItem("estaLogado") == "true") {
+          document.querySelector(".item-login").style.display = "none";
+          document.querySelector(".item-sair").style.display = "block";
+          document.querySelector(
+            ".usuario"
+          ).innerHTML = `Seja bem-vindo, ${localStorage.getItem(
+            "usernameLogado"
+          )}`;
+        } else {
+          document.querySelector(".item-login").style.display = "block";
+          document.querySelector(".item-sair").style.display = "none";
+          document.querySelector(".usuario").innerHTML = ``;
+        }
+
+        if (!localStorage.getItem("usuarios")) {
+          localStorage.setItem("usuarios", JSON.stringify([]));
+        }
+      }
+
+      checarBanco();
+
+      function sair() {
+        localStorage.setItem("estaLogado", false);
+        checarBanco();
+      }
+    </script>
+  </body>
 </html>

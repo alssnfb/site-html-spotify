@@ -40,13 +40,14 @@ input[type="password"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #1db954;
+    background-color: #fa66b8;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
+
 button:hover {
-    background-color: #1db954;
+    background-color: #fa66b8;
 }

@@ -206,3 +206,8 @@ body {
     margin-left: 10px;
 }
 
+
+a{
+    font-style: none;
+    color: white;
+}

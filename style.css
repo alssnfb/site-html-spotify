@@ -1,6 +1,6 @@
 :root {
-	--default-green: #1db954;
-	--light-green: #1ed760;
+	--default-green: #fa66b8;
+	--light-green: #f3b3bd;
 }
 
 
@@ -32,7 +32,7 @@ body {
 }
 
 .logo {
-    height: 40px;
+    height: 100px;
     width: auto;
 }
 
